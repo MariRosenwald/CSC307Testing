@@ -39,7 +39,7 @@ function scale (ticker, share) {
           port['ports'].splice(i, 1); 
         } else if(port['ports'][i].shares < 0){
             port['ports'][i].shares += share; 
-            throw Error('ShareSaleException');
+            throw new Error("ShareSaleException");
             
         }
       }

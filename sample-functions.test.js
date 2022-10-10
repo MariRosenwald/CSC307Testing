@@ -111,7 +111,7 @@ test("Testing scale -- success", () => {
   //   throw new ErrorEvent('ShareSaleException'); 
   // }
 
-  // expect(t).toThrow(myFunctions.scale('a', 6)); 
+  expect(() => myFunctions.scale('a' , 6)).toThrow(Error("ShareSaleException")); 
   expect(target4).toStrictEqual(myFunctions.port['ports']); 
 
 });
